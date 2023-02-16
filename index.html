@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Hello po miss ma'am</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="start.css">
+        <link rel="stylesheet" href="book.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <script src="scripts/sound.js"></script>
+    </head>
+
+    <body>
+      
+      <div class="radial-bg"></div>
+
+      <p id="binibini">Binibining mula sa langit. <br> Puso ko'y iyong naakit</p>
+
+      <img src="svg/heart-corner.svg" alt="", id="heart-corner">
+      <img src="svg/heart-single-corner.svg" alt="", id="heart-single-corner">
+
+      <div id="book" class="expand-page" onmouseover="PlayPageTurn()" onmouseleave="PlayPageTurn()">
+        <div class="paper expand-page">
+          <div class="front expand-page">
+            <p class="to-name">Miss ma'am</p>
+            <p>
+              Bini-bining mula sa langit <br>
+              puso ko'y iyong naakit <br>
+              Di malaman kung bakit <br>
+              pero puso ko'y nananabik <br><br>
+              
+              Isang anghel na bumaba<br>
+              Ano kaya ang iyong ginagawa<br>
+              Sino kaya ang iyong kasama<br>
+              Nandito po ako sa baba<br><br>
+
+              Tadhanang mahiwaga<br>
+              Parang awa mo na<br>
+              Nandito akong lumuluha<br>
+              Humihingi ng isang pag-asa
+            </p>
+            <p class="from-name">Hoshi</p>
+          </div>
+        </div>
+
+        <div class="paper expand-page" id="p1">
+          <div class="front expand-page">
+            <img src="svg/card-hearts.svg" id="card-hearts" alt="">
+            <p id="hover-me">Hover Me</p>
+          </div>
+        </div>
+      </div>
+
+      <input type="checkbox" id="start">
+      <label for="start" class="radial-bg" id="click-to-start" onclick="PlayBackground()">
+         
+        <img src="svg/open-hearts.svg" alt="For you... Miss ma'am" class="bg-image">
+        <p id="click-to-open">Click to Open</p>
+       
+      </label>
+    </body>
+</html>

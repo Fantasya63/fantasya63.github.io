@@ -1,0 +1,59 @@
+.expand-page{
+    width: 250px;
+    height: 350px;
+}
+
+#card-hearts
+{
+    width: 128px;
+}
+
+#hover-me
+{
+    font-family: Roboto;
+    font-size: 12px;
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+}
+
+#book{
+    position: absolute;
+    right: 256px;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform: perspective(2500px);
+    transition: 1s;
+}
+
+#book:hover{
+    transform: rotate(5deg);
+    box-shadow: inset 100px 20px 100px rgba(0,0,0,.2), 0 10px 100px rgba(0,0,0,0.5);
+}
+
+#book:hover #p1 {
+    transform: rotateY(-160deg); 
+  }
+
+.paper{
+    position:absolute;
+    transform-style: preserve-3d;
+    transform-origin: left;
+    background-color: #fff;
+    transition: 0.6s;
+    box-shadow: inset 100px 20px 100px rgba(0,0,0,.2), 30px 0 50px rgba(0,0,0,0.4);
+  }
+  .front, .back{
+    position:absolute;
+    width:100%;
+    height:100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center;
+    display: flex;
+    backface-visibility: hidden;
+  }
+  
+  .back{
+    transform:rotateY(180deg);
+  }
